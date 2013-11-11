@@ -22,6 +22,8 @@
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    
+    self.currency = @"EUR";
 }
 
 - (void)dismissKeyboard {
@@ -124,12 +126,41 @@ BOOL isValidInput(NSString *soupValue, NSString *mainDishValue, NSString *desert
 }
 
 - (IBAction)calculateButtonTapped:(id)sender {
+    self.totalAmount = 0;
     self.errorMessagesLabel.text = @"";
     if (!isValidInput(self.soupTextField.text, self.mainDishTextField.text, self.desertTextField.text))
     {
         self.errorMessagesLabel.text = @"Invalid input!";
+        self.totalPriceLabel.text = @"";
     }
-
+    else
+    {
+        self.totalAmount += [self.soupTextField.text doubleValue] * 2;
+        self.totalAmount += [self.mainDishTextField.text doubleValue] * 4.5;
+        self.totalAmount += [self.desertTextField.text doubleValue] * 1.5;
+        self.totalAmount += self.cocaColaSlider.value * 2;
+        
+        if (self.homeDeliverySwitch.on)
+        {
+            self.totalAmount += 10;
+        }
+        
+        if ([self.currency isEqualToString: @"$"])
+        {
+            self.totalAmount *= TODOLLARS;
+        }
+        
+        if ([self.currency isEqualToString: @"BGN"])
+        {
+            self.totalAmount *= TOBGN;
+        }
+        
+        self.totalPriceLabel.text = [NSString stringWithFormat:@"%.2f %@", self.totalAmount, self.currency];
+    }
+}
+- (IBAction)currencyButtonTapped:(id)sender {
+    self.currency = [sender titleForState: UIControlStateNormal];
+    [self calculateButtonTapped: nil];
 }
 
 @end
