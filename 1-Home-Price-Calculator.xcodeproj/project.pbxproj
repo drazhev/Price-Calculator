@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC9CCE318311DEE00572284 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CCE218311DEE00572284 /* Foundation.framework */; };
+		EDC9CCE518311DEE00572284 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CCE418311DEE00572284 /* CoreGraphics.framework */; };
+		EDC9CCE718311DEE00572284 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CCE618311DEE00572284 /* UIKit.framework */; };
+		EDC9CCED18311DEE00572284 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC9CCEB18311DEE00572284 /* InfoPlist.strings */; };
+		EDC9CCEF18311DEE00572284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC9CCEE18311DEE00572284 /* main.m */; };
+		EDC9CCF318311DEE00572284 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC9CCF218311DEE00572284 /* AppDelegate.m */; };
+		EDC9CCF618311DEE00572284 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC9CCF418311DEE00572284 /* Main_iPhone.storyboard */; };
+		EDC9CCF918311DEE00572284 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC9CCF718311DEE00572284 /* Main_iPad.storyboard */; };
+		EDC9CCFC18311DEE00572284 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC9CCFB18311DEE00572284 /* ViewController.m */; };
+		EDC9CCFE18311DEE00572284 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC9CCFD18311DEE00572284 /* Images.xcassets */; };
+		EDC9CD0518311DEE00572284 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CD0418311DEE00572284 /* XCTest.framework */; };
+		EDC9CD0618311DEE00572284 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CCE218311DEE00572284 /* Foundation.framework */; };
+		EDC9CD0718311DEE00572284 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC9CCE618311DEE00572284 /* UIKit.framework */; };
+		EDC9CD0F18311DEE00572284 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC9CD0D18311DEE00572284 /* InfoPlist.strings */; };
+		EDC9CD1118311DEE00572284 /* __Home_Price_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC9CD1018311DEE00572284 /* __Home_Price_CalculatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDC9CD0818311DEE00572284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC9CCD718311DEE00572284 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC9CCDE18311DEE00572284;
+			remoteInfo = "1-Home-Price-Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDC9CCDF18311DEE00572284 /* 1-Home-Price-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1-Home-Price-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC9CCE218311DEE00572284 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EDC9CCE418311DEE00572284 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EDC9CCE618311DEE00572284 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDC9CCEA18311DEE00572284 /* 1-Home-Price-Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "1-Home-Price-Calculator-Info.plist"; sourceTree = "<group>"; };
+		EDC9CCEC18311DEE00572284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDC9CCEE18311DEE00572284 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDC9CCF018311DEE00572284 /* 1-Home-Price-Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "1-Home-Price-Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		EDC9CCF118311DEE00572284 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDC9CCF218311DEE00572284 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDC9CCF518311DEE00572284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EDC9CCF818311DEE00572284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EDC9CCFA18311DEE00572284 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDC9CCFB18311DEE00572284 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDC9CCFD18311DEE00572284 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EDC9CD0318311DEE00572284 /* 1-Home-Price-CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "1-Home-Price-CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC9CD0418311DEE00572284 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EDC9CD0C18311DEE00572284 /* 1-Home-Price-CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "1-Home-Price-CalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		EDC9CD0E18311DEE00572284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDC9CD1018311DEE00572284 /* __Home_Price_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Home_Price_CalculatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC9CCDC18311DEE00572284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC9CCE518311DEE00572284 /* CoreGraphics.framework in Frameworks */,
+				EDC9CCE718311DEE00572284 /* UIKit.framework in Frameworks */,
+				EDC9CCE318311DEE00572284 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC9CD0018311DEE00572284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC9CD0518311DEE00572284 /* XCTest.framework in Frameworks */,
+				EDC9CD0718311DEE00572284 /* UIKit.framework in Frameworks */,
+				EDC9CD0618311DEE00572284 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDC9CCD618311DEE00572284 = {
+			isa = PBXGroup;
+			children = (
+				EDC9CCE818311DEE00572284 /* 1-Home-Price-Calculator */,
+				EDC9CD0A18311DEE00572284 /* 1-Home-Price-CalculatorTests */,
+				EDC9CCE118311DEE00572284 /* Frameworks */,
+				EDC9CCE018311DEE00572284 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC9CCE018311DEE00572284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9CCDF18311DEE00572284 /* 1-Home-Price-Calculator.app */,
+				EDC9CD0318311DEE00572284 /* 1-Home-Price-CalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC9CCE118311DEE00572284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9CCE218311DEE00572284 /* Foundation.framework */,
+				EDC9CCE418311DEE00572284 /* CoreGraphics.framework */,
+				EDC9CCE618311DEE00572284 /* UIKit.framework */,
+				EDC9CD0418311DEE00572284 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDC9CCE818311DEE00572284 /* 1-Home-Price-Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9CCF118311DEE00572284 /* AppDelegate.h */,
+				EDC9CCF218311DEE00572284 /* AppDelegate.m */,
+				EDC9CCF418311DEE00572284 /* Main_iPhone.storyboard */,
+				EDC9CCF718311DEE00572284 /* Main_iPad.storyboard */,
+				EDC9CCFA18311DEE00572284 /* ViewController.h */,
+				EDC9CCFB18311DEE00572284 /* ViewController.m */,
+				EDC9CCFD18311DEE00572284 /* Images.xcassets */,
+				EDC9CCE918311DEE00572284 /* Supporting Files */,
+			);
+			path = "1-Home-Price-Calculator";
+			sourceTree = "<group>";
+		};
+		EDC9CCE918311DEE00572284 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9CCEA18311DEE00572284 /* 1-Home-Price-Calculator-Info.plist */,
+				EDC9CCEB18311DEE00572284 /* InfoPlist.strings */,
+				EDC9CCEE18311DEE00572284 /* main.m */,
+				EDC9CCF018311DEE00572284 /* 1-Home-Price-Calculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDC9CD0A18311DEE00572284 /* 1-Home-Price-CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9CD1018311DEE00572284 /* __Home_Price_CalculatorTests.m */,
+				EDC9CD0B18311DEE00572284 /* Supporting Files */,
+			);
+			path = "1-Home-Price-CalculatorTests";
+			sourceTree = "<group>";
+		};
+		EDC9CD0B18311DEE00572284 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9CD0C18311DEE00572284 /* 1-Home-Price-CalculatorTests-Info.plist */,
+				EDC9CD0D18311DEE00572284 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC9CCDE18311DEE00572284 /* 1-Home-Price-Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC9CD1418311DEE00572284 /* Build configuration list for PBXNativeTarget "1-Home-Price-Calculator" */;
+			buildPhases = (
+				EDC9CCDB18311DEE00572284 /* Sources */,
+				EDC9CCDC18311DEE00572284 /* Frameworks */,
+				EDC9CCDD18311DEE00572284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1-Home-Price-Calculator";
+			productName = "1-Home-Price-Calculator";
+			productReference = EDC9CCDF18311DEE00572284 /* 1-Home-Price-Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDC9CD0218311DEE00572284 /* 1-Home-Price-CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC9CD1718311DEE00572284 /* Build configuration list for PBXNativeTarget "1-Home-Price-CalculatorTests" */;
+			buildPhases = (
+				EDC9CCFF18311DEE00572284 /* Sources */,
+				EDC9CD0018311DEE00572284 /* Frameworks */,
+				EDC9CD0118311DEE00572284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC9CD0918311DEE00572284 /* PBXTargetDependency */,
+			);
+			name = "1-Home-Price-CalculatorTests";
+			productName = "1-Home-Price-CalculatorTests";
+			productReference = EDC9CD0318311DEE00572284 /* 1-Home-Price-CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC9CCD718311DEE00572284 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alexander Drazhev";
+				TargetAttributes = {
+					EDC9CD0218311DEE00572284 = {
+						TestTargetID = EDC9CCDE18311DEE00572284;
+					};
+				};
+			};
+			buildConfigurationList = EDC9CCDA18311DEE00572284 /* Build configuration list for PBXProject "1-Home-Price-Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC9CCD618311DEE00572284;
+			productRefGroup = EDC9CCE018311DEE00572284 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC9CCDE18311DEE00572284 /* 1-Home-Price-Calculator */,
+				EDC9CD0218311DEE00572284 /* 1-Home-Price-CalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC9CCDD18311DEE00572284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC9CCF918311DEE00572284 /* Main_iPad.storyboard in Resources */,
+				EDC9CCFE18311DEE00572284 /* Images.xcassets in Resources */,
+				EDC9CCF618311DEE00572284 /* Main_iPhone.storyboard in Resources */,
+				EDC9CCED18311DEE00572284 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC9CD0118311DEE00572284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC9CD0F18311DEE00572284 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC9CCDB18311DEE00572284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC9CCFC18311DEE00572284 /* ViewController.m in Sources */,
+				EDC9CCF318311DEE00572284 /* AppDelegate.m in Sources */,
+				EDC9CCEF18311DEE00572284 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC9CCFF18311DEE00572284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC9CD1118311DEE00572284 /* __Home_Price_CalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDC9CD0918311DEE00572284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC9CCDE18311DEE00572284 /* 1-Home-Price-Calculator */;
+			targetProxy = EDC9CD0818311DEE00572284 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDC9CCEB18311DEE00572284 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC9CCEC18311DEE00572284 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDC9CCF418311DEE00572284 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC9CCF518311DEE00572284 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC9CCF718311DEE00572284 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC9CCF818311DEE00572284 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC9CD0D18311DEE00572284 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC9CD0E18311DEE00572284 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC9CD1218311DEE00572284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC9CD1318311DEE00572284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC9CD1518311DEE00572284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "1-Home-Price-Calculator/1-Home-Price-Calculator-Prefix.pch";
+				INFOPLIST_FILE = "1-Home-Price-Calculator/1-Home-Price-Calculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDC9CD1618311DEE00572284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "1-Home-Price-Calculator/1-Home-Price-Calculator-Prefix.pch";
+				INFOPLIST_FILE = "1-Home-Price-Calculator/1-Home-Price-Calculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EDC9CD1818311DEE00572284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/1-Home-Price-Calculator.app/1-Home-Price-Calculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "1-Home-Price-Calculator/1-Home-Price-Calculator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "1-Home-Price-CalculatorTests/1-Home-Price-CalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EDC9CD1918311DEE00572284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/1-Home-Price-Calculator.app/1-Home-Price-Calculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "1-Home-Price-Calculator/1-Home-Price-Calculator-Prefix.pch";
+				INFOPLIST_FILE = "1-Home-Price-CalculatorTests/1-Home-Price-CalculatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC9CCDA18311DEE00572284 /* Build configuration list for PBXProject "1-Home-Price-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC9CD1218311DEE00572284 /* Debug */,
+				EDC9CD1318311DEE00572284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC9CD1418311DEE00572284 /* Build configuration list for PBXNativeTarget "1-Home-Price-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC9CD1518311DEE00572284 /* Debug */,
+				EDC9CD1618311DEE00572284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDC9CD1718311DEE00572284 /* Build configuration list for PBXNativeTarget "1-Home-Price-CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC9CD1818311DEE00572284 /* Debug */,
+				EDC9CD1918311DEE00572284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDC9CCD718311DEE00572284 /* Project object */;
+}
