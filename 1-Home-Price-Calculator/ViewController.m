@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
@@ -85,7 +86,8 @@ BOOL isValidInput(NSString *soupValue, NSString *mainDishValue, NSString *desert
             self.soupTextField.text = [NSString stringWithFormat:@"%d", [self.soupTextField.text intValue] + 1];
         }
         
-        else {
+        else
+        {
             self.soupTextField.text = [NSString stringWithFormat:@"%d", [self.soupTextField.text intValue] - 1];
         }
     }
@@ -103,7 +105,8 @@ BOOL isValidInput(NSString *soupValue, NSString *mainDishValue, NSString *desert
             self.mainDishTextField.text = [NSString stringWithFormat:@"%d", [self.mainDishTextField.text intValue] + 1];
         }
         
-        else {
+        else
+        {
             self.mainDishTextField.text = [NSString stringWithFormat:@"%d", [self.mainDishTextField.text intValue] - 1];
         }
     }
@@ -119,7 +122,8 @@ BOOL isValidInput(NSString *soupValue, NSString *mainDishValue, NSString *desert
             self.desertTextField.text = [NSString stringWithFormat:@"%d", [self.desertTextField.text intValue] + 1];
         }
         
-        else {
+        else
+        {
             self.desertTextField.text = [NSString stringWithFormat:@"%d", [self.desertTextField.text intValue] - 1];
         }
     }
@@ -159,8 +163,12 @@ BOOL isValidInput(NSString *soupValue, NSString *mainDishValue, NSString *desert
     }
 }
 - (IBAction)currencyButtonTapped:(id)sender {
+    [self.currencyButton setBackgroundColor: [UIColor whiteColor]];
+    self.currencyButton = (UIButton *) sender;
+    [self.currencyButton setBackgroundColor: [UIColor colorWithRed:187/255.0 green:1 blue:1 alpha:0.5]];
+    
     self.currency = [sender titleForState: UIControlStateNormal];
-    [self calculateButtonTapped: nil];
+    [self calculateButtonTapped: sender];
 }
 
 @end

@@ -20,4 +20,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *errorMessagesLabel;
 @property (nonatomic) double totalAmount;
 @property (weak, nonatomic) NSString *currency;
+@property (weak, nonatomic) IBOutlet UIButton *currencyButton;
 @end
