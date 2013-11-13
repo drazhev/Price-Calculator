@@ -139,14 +139,14 @@ BOOL isValidInput(NSString *soupValue, NSString *mainDishValue, NSString *desert
     }
     else
     {
-        self.totalAmount += [self.soupTextField.text doubleValue] * 2;
-        self.totalAmount += [self.mainDishTextField.text doubleValue] * 4.5;
-        self.totalAmount += [self.desertTextField.text doubleValue] * 1.5;
-        self.totalAmount += self.cocaColaSlider.value * 2;
+        self.totalAmount += [self.soupTextField.text doubleValue] * SOUP_PRICE_EURO;
+        self.totalAmount += [self.mainDishTextField.text doubleValue] * MAIN_DISH_PRICE_EURO;
+        self.totalAmount += [self.desertTextField.text doubleValue] * DESERT_PRICE_EURO;
+        self.totalAmount += self.cocaColaSlider.value * COCA_COLA_LITER_PRICE_EURO;
         
         if (self.homeDeliverySwitch.on)
         {
-            self.totalAmount += 10;
+            self.totalAmount += HOME_DELIVERY_PRICE_EURO;
         }
         
         if ([self.currency isEqualToString: @"$"])
@@ -168,6 +168,31 @@ BOOL isValidInput(NSString *soupValue, NSString *mainDishValue, NSString *desert
     [self.currencyButton setBackgroundColor: [UIColor colorWithRed:187/255.0 green:1 blue:1 alpha:0.5]];
     
     self.currency = [sender titleForState: UIControlStateNormal];
+   
+    if ([self.currency isEqualToString: @"$"]) {
+        self.soupPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", SOUP_PRICE_EURO * TODOLLARS, self.currency];
+        self.mainDishPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", MAIN_DISH_PRICE_EURO * TODOLLARS, self.currency];
+        self.desertPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", DESERT_PRICE_EURO * TODOLLARS, self.currency];
+        self.cocaColaPriceLabel.text = [NSString stringWithFormat: @"%.1f %@%@", COCA_COLA_LITER_PRICE_EURO * TODOLLARS, self.currency, @"/liter"];
+        self.homeDeliveryPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", HOME_DELIVERY_PRICE_EURO * TODOLLARS, self.currency];
+    }
+    
+    if ([self.currency isEqualToString: @"BGN"]) {
+        self.soupPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", SOUP_PRICE_EURO * TOBGN, self.currency];
+        self.mainDishPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", MAIN_DISH_PRICE_EURO * TOBGN, self.currency];
+        self.desertPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", DESERT_PRICE_EURO * TOBGN, self.currency];
+        self.cocaColaPriceLabel.text = [NSString stringWithFormat: @"%.1f %@%@", COCA_COLA_LITER_PRICE_EURO * TOBGN, self.currency, @"/liter"];
+        self.homeDeliveryPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", HOME_DELIVERY_PRICE_EURO * TOBGN, self.currency];
+    }
+    
+       if ([self.currency isEqualToString: @"EUR"]) {
+        self.soupPriceLabel.text = [NSString stringWithFormat: @"%d %@", SOUP_PRICE_EURO, self.currency];
+        self.mainDishPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", MAIN_DISH_PRICE_EURO, self.currency];
+        self.desertPriceLabel.text = [NSString stringWithFormat: @"%.1f %@", DESERT_PRICE_EURO, self.currency];
+        self.cocaColaPriceLabel.text = [NSString stringWithFormat: @"%d %@%@", COCA_COLA_LITER_PRICE_EURO, self.currency, @"/liter"];
+        self.homeDeliveryPriceLabel.text = [NSString stringWithFormat: @"%d %@", HOME_DELIVERY_PRICE_EURO, self.currency];
+       }
+    
     [self calculateButtonTapped: sender];
 }
 

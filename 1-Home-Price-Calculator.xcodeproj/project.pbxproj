@@ -396,6 +396,7 @@
 				GCC_PREFIX_HEADER = "1-Home-Price-Calculator/1-Home-Price-Calculator-Prefix.pch";
 				INFOPLIST_FILE = "1-Home-Price-Calculator/1-Home-Price-Calculator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,6 +410,7 @@
 				GCC_PREFIX_HEADER = "1-Home-Price-Calculator/1-Home-Price-Calculator-Prefix.pch";
 				INFOPLIST_FILE = "1-Home-Price-Calculator/1-Home-Price-Calculator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +476,7 @@
 				EDC9CD1618311DEE00572284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDC9CD1718311DEE00572284 /* Build configuration list for PBXNativeTarget "1-Home-Price-CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +485,7 @@
 				EDC9CD1918311DEE00572284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
